@@ -88,6 +88,9 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  mounted() {
+    console.log(process.env.API_KEY);
   }
 }
 </script>

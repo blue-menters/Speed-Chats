@@ -1,5 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
+require("dotenv").config();
+const { API_KEY } = process.env;
+
 export default {
   mode: 'spa',
   /*
@@ -75,5 +78,8 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+  env: {
+    API_KEY
   }
 }
